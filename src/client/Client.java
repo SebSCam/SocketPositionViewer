@@ -30,7 +30,7 @@ public class Client {
         DataOutputStream dataOutput = new DataOutputStream(socketClient.getOutputStream());
 
         while (true){
-            dataOutput.writeInt(Integer.parseInt(JOptionPane.showInputDialog(null,"Enter a position to Search")));
+            dataOutput.writeInt(Integer.parseInt(JOptionPane.showInputDialog(null,"Enter a position to Search 0 - 10")));
             JOptionPane.showMessageDialog(null,"CLIENT: The server returns - " + dataInput.readUTF());
         }
     }
